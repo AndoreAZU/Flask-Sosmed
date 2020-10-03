@@ -1,0 +1,97 @@
+2020-09-20 12:55:38,420 ERROR: Exception on /user/andreas [GET] [in c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\routes.py", line 85, in user
+    posts = Post.get_post_self(user)
+  File "C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\models.py", line 71, in get_post_self
+    return Post.query_filter_by(user_id=User.id)
+AttributeError: type object 'Post' has no attribute 'query_filter_by'
+2020-09-20 12:57:12,681 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:43]
+2020-09-20 12:57:14,758 ERROR: Exception on /user/andreas [GET] [in c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\routes.py", line 85, in user
+    posts = user.get_post_self(user)
+AttributeError: 'User' object has no attribute 'get_post_self'
+2020-09-20 12:57:52,431 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:43]
+2020-09-20 12:57:54,279 ERROR: Exception on /user/andreas [GET] [in c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\routes.py", line 85, in user
+    posts = user.post_self(user)
+TypeError: post_self() takes 1 positional argument but 2 were given
+2020-09-20 16:08:49,934 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:45]
+2020-09-20 16:09:40,602 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:45]
+2020-09-20 16:10:12,783 ERROR: Exception on /reset_password_request [GET] [in c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\routes.py", line 190, in reset_password_request
+    return render_template('reset_password_request.html',
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\andoreazu\documents\eksplore\python\flask\virtualenv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reset_password_request.html
+2020-09-20 16:10:56,688 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:45]
+2020-09-20 16:12:24,690 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:45]
+2020-09-20 16:13:53,035 INFO: Microblog startup [in C:\Users\AndoreAZU\Documents\Eksplore\Python\Flask\app\__init__.py:45]
